@@ -1,0 +1,38 @@
+# Version control
+.git
+.gitignore
+.gitattributes
+
+# Local environment
+.env
+.venv
+venv
+env
+
+# Python cache & build artifacts
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.egg-info
+.pytest_cache
+.mypy_cache
+.ruff_cache
+.coverage
+htmlcov
+build
+dist
+
+# IDE / OS
+.vscode
+.idea
+*.swp
+.DS_Store
+Thumbs.db
+
+# Docs / meta
+README.md
+*.md
+LICENSE
+
+# Tests are copied explicitly by the Dockerfile; everything else excluded above.
