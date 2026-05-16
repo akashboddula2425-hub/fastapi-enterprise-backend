@@ -41,8 +41,8 @@ app/
 ## Running with Docker (recommended)
 
 ```bash
-git clone https://github.com/akashboddula2425-hub/-FastAPI_enterprise_-backend.git
-cd -FastAPI_enterprise_-backend
+git clone https://github.com/akashboddula2425-hub/fastapi-enterprise-backend.git
+cd fastapi-enterprise-backend
 cp .env.example .env
 docker-compose up --build
 ```
