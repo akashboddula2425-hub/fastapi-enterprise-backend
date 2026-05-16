@@ -41,9 +41,13 @@ app/
 ## Running with Docker (recommended)
 
 ```bash
+git clone https://github.com/akashboddula2425-hub/-FastAPI_enterprise_-backend.git
+cd -FastAPI_enterprise_-backend
 cp .env.example .env
 docker-compose up --build
 ```
+
+> **Windows note:** `cp` works in PowerShell (it's aliased to `Copy-Item`). In `cmd.exe` use `copy .env.example .env` instead.
 
 What this does:
 1. Builds the `web` image (Python 3.11-slim, multi-stage).
@@ -55,6 +59,8 @@ API is available at `http://localhost:8000` (which redirects to Swagger UI).
 - Swagger UI: `http://localhost:8000/docs`
 - ReDoc: `http://localhost:8000/redoc`
 - OpenAPI JSON: `http://localhost:8000/openapi.json`
+
+**End-to-end verification flow:** see [TESTING.md](TESTING.md) — copy-paste payloads that walk through every feature (auth, projects, tasks, filters/sort, background quote job, analytics, multi-user authorization, soft delete) in ~10 minutes.
 
 ## Running Locally (without Docker)
 
@@ -182,3 +188,4 @@ Validation errors (422) additionally include a `details` array with per-field er
 - Alembic migration: `alembic/versions/0001_initial_schema.py`
 - Tests: `tests/`
 - API docs: auto-generated Swagger at `/docs` (use as the live API collection)
+- [TESTING.md](TESTING.md) — step-by-step verification flow with copy-paste payloads
